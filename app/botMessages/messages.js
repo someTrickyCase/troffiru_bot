@@ -1,17 +1,10 @@
-const {
-    startKeyboard,
-    // startInlineKeyboard
-} = require("./keyboards.js");
+const { startKeyboard, startInlineKeyboard } = require("./keyboards.js");
 const { DICTIONARY } = require("../config/dictionary.js");
 
 async function botSendStartMessages(chatID) {
     try {
         await this.sendMessage(chatID, DICTIONARY.onStartMessage, startKeyboard);
-        await this.sendMessage(
-            chatID,
-            DICTIONARY.ctaMessage
-            //  startInlineKeyboard
-        );
+        await this.sendMessage(chatID, DICTIONARY.ctaMessage, startInlineKeyboard);
     } catch (error) {
         console.error(error);
     }

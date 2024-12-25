@@ -3,7 +3,7 @@ const DICTIONARY = {
 
     repeatableStartMessage: "Что-нибудь еще?",
 
-    // ctaMessage: "Так же не забудьте посетить наш магазин по кнопке ниже!",
+    ctaMessage: "Так же не забудьте посетить наш магазин по кнопке ниже!",
 
     orderWelcomeMessage: "Окей, напишите номер Вашего заказа",
 

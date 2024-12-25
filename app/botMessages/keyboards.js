@@ -17,15 +17,15 @@ const startKeyboard = {
 
 // _____________ WEB APP BUTTON
 
-// const startInlineKeyboard = {
-//     reply_markup: {
-//         resize_keyboard: true,
-//         one_time_keyboard: false,
-//         keyboard: [[{ text: "В магазин 🚗", web_app: { url: process.env.WEB_APP_URL } }]],
-//     },
-// };
+const startInlineKeyboard = {
+    reply_markup: {
+        resize_keyboard: true,
+        one_time_keyboard: false,
+        keyboard: [[{ text: "В магазин 🚗", web_app: { url: process.env.WEB_APP_URL } }]],
+    },
+};
 
 module.exports = {
     startKeyboard,
-    // startInlineKeyboard
+    startInlineKeyboard,
 };

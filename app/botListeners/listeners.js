@@ -5,7 +5,6 @@ const {
     getBitrixLeadStatus,
 } = require("../../api/bitrxController.js");
 const { botRepeatStartMessage } = require("../botMessages/messages");
-
 const { switchToDefaultState } = require("../botState/defaultState.js");
 
 function generatePostData(msg, type) {
