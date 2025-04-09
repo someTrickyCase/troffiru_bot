@@ -3,6 +3,7 @@ require("dotenv").config();
 const startKeyboard = {
     reply_markup: {
         inline_keyboard: [
+            [{ text: "Перейти в азербайджанский чат", callback_data: "azerChat" }],
             [{ text: "🗨️ Уточнить наличие товара", callback_data: "product" }],
             // [{ text: "🚛 Уточнить статус заказа", callback_data: "order" }],
             [{ text: "🤓 Получить бесплатную консультацию", callback_data: "consultation" }],

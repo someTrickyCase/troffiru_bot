@@ -115,6 +115,16 @@ async function botSendVehicleCustomizationFAQ(chatID) {
     }
 }
 
+async function botSendLinkToAzerChat(chatID) {
+    try {
+        await this.sendMessage(chatID, DICTIONARY.linkToAzerChat, {
+            parse_mode: "Markdown",
+        });
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 module.exports = {
     botSendStartMessages,
     botSendOrderConfirmMessages,
@@ -130,4 +140,5 @@ module.exports = {
     botSendDeliveryFAQ,
     botSendContactsFAQ,
     botSendVehicleCustomizationFAQ,
+    botSendLinkToAzerChat,
 };

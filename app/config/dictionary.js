@@ -101,6 +101,9 @@ _426009, Удмуртская Республика, г. Ижевск, переу
 
 _Подробную информацию можно узнать_ [тут](https://hiluxtoyota.ru/services)
 `,
+    linkToAzerChat: `
+[Ссылка на чат](https://chat.whatsapp.com/HmmedfPOYWN5K5lxdy1Xd8)
+`,
 };
 
 module.exports = { DICTIONARY };

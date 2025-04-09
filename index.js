@@ -21,6 +21,7 @@ const {
     botSendDeliveryFAQ,
     botSendContactsFAQ,
     botSendVehicleCustomizationFAQ,
+    botSendLinkToAzerChat,
 } = require("./app/botMessages/messages.js");
 
 const { botQueryListener, botOnOrderQueryListener } = require("./app/botListeners/listeners.js");
@@ -77,6 +78,10 @@ bot.on("callback_query", async (query) => {
         case "vehicleCustomization":
             botRepeatStartMessage.call(bot, chatID);
             botSendVehicleCustomizationFAQ.call(bot, chatID);
+            break;
+        case "vehicleCustomization":
+            botRepeatStartMessage.call(bot, chatID);
+            botSendLinkToAzerChat.call(bot, chatID);
             break;
     }
 });
