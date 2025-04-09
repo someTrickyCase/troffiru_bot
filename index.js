@@ -79,7 +79,7 @@ bot.on("callback_query", async (query) => {
             botRepeatStartMessage.call(bot, chatID);
             botSendVehicleCustomizationFAQ.call(bot, chatID);
             break;
-        case "vehicleCustomization":
+        case "azerChat":
             botRepeatStartMessage.call(bot, chatID);
             botSendLinkToAzerChat.call(bot, chatID);
             break;
